@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marju Confeitaria - Doces, bolos, tortas e salgados artesanais feitos com carinho. Encomende já!">
+    <meta name="keywords" content="confeitaria, doces, bolos, tortas, salgados, artesanal">
+    <title>Marju Confeitaria - Doces Artesanais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#d4a574">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Marju Confeitaria">
+    <link rel="apple-touch-icon" href="assets/logo2.jpg">
+</head>
+<body>
+    <a href="#home" class="skip-link">Pular para o conteúdo principal</a>
+
+    <a href="#form-pedido" class="floating-button" aria-label="Fazer pedido via WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        <span>Faça seu Pedido</span>
+    </a>
+
+    <header class="header" role="banner">
+        <div class="header-content">
+            <a href="#home" class="logo" aria-label="Marju Confeitaria - Página inicial">Marju</a>
+            <nav class="navbar" role="navigation" aria-label="Menu principal">
+                <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#sobre" class="nav-link" data-modal="modal-sobre">Sobre</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#pagamento" class="nav-link">Pagamento</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <button class="cart-icon" id="cart-icon" aria-label="Abrir carrinho de compras">
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="cart-count" aria-label="Itens no carrinho">0</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="fixed-corner-shape">
+        <img src="assets/logo2.jpg" alt="Logo Marju Confeitaria">
+    </div>
+
+    <main>
+        <section class="hero" id="home" aria-label="Seção principal">
+            <div class="hero-decoration" aria-hidden="true"></div>
+        </section>
+
+    <div id="modal-sobre" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="about-container">
+                <img src="assets/img_conf.JPG" alt="Marju Confeiteira" class="about-image">
+                <div class="about-text">
+                    <h3>Sobre a Marju</h3>
+                    <p>Em 2010, comecei a fazer bolos para minha família, de forma totalmente amadora, apenas como um hobby. Na época, percebia a dificuldade em encontrar bolos verdadeiramente saborosos, úmidos e bem recheados à venda. O que era apenas uma diversão, aos poucos se transformou em uma paixão, e com ela veio a vontade de aprender mais e me aperfeiçoar.</p>
+                    <p>Em 2016, sem grandes pretensões, esse hobby começou a se tornar uma fonte de renda. Pessoas próximas, que já haviam experimentado meus bolos, passaram a fazer encomendas para suas comemorações. Foi então que senti a necessidade de me especializar, aprender novas técnicas e me profissionalizar — afinal, acredito que um bolo nunca é "só um bolo". Ele é, muitas vezes, a estrela da mesa nas celebrações.</p>
+                    <p>Desde então, venho me dedicando a cursos e aprimoramentos constantes. Em 2019, dei um passo importante e ingressei no curso de Gastronomia na Unifatecie, reforçando ainda mais meu compromisso com a qualidade e a excelência.</p>
+                    <p>Continuo acreditando que um bolo vai muito além de um simples doce: ele é uma experiência gastronômica, um símbolo de união, confraternização e, muitas vezes, de emoção.</p>
+                    <p><strong>Minha especialidade:</strong> Bolos decorados e brigadeiros tradicionais e gourmet</p>
+                    <p><strong>Faço também:</strong><br>
+Tortas doces, torta de sorvete, cupcakes, bolos caseiros, caixinhas de doces presenteáveis, ovos de páscoa tradicionais e de colher e chocotones.</p>
+                    <p><strong>Salgados:</strong><br>
+Pizzas caseiras, mini hambúrguer, doguinhos assados, empadas, panelinhas e barquetes, mini quiches e mini calzones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <section class="products-section" id="produtos" aria-labelledby="produtos-title">
+            <div class="container">
+                <h2 id="produtos-title" class="section-title">Nossos Produtos</h2>
+                <div class="product-categories" role="list">
+                    <article class="category-card" data-category="doces" role="listitem" tabindex="0">
+                        <div class="category-image">
+                            <img src="assets/beijinho.jpeg" alt="Variedade de doces artesanais" loading="lazy">
+                            <div class="category-overlay">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <span>Ver Produtos</span>
+                            </div>
+                        </div>
+                        <h3>Doces</h3>
+                        <p>Brigadeiros, beijinhos e muito mais</p>
+                    </article>
+                    <article class="category-card" data-category="salgados" role="listitem" tabindex="0">
+                        <div class="category-image">
+                            <img src="assets/mini-sanduiches.jpeg" alt="Salgados variados" loading="lazy">
+                            <div class="category-overlay">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <span>Ver Produtos</span>
+                            </div>
+                        </div>
+                        <h3>Salgados</h3>
+                        <p>Coxinhas, risoles e empadinhas</p>
+                    </article>
+                    <article class="category-card" data-category="bolos" role="listitem" tabindex="0">
+                        <div class="category-image">
+                            <img src="assets/bolo-tradicional.jpeg" alt="Bolos decorados" loading="lazy">
+                            <div class="category-overlay">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <span>Ver Produtos</span>
+                            </div>
+                        </div>
+                        <h3>Bolos</h3>
+                        <p>Personalizados para sua ocasião</p>
+                    </article>
+                    <article class="category-card" data-category="tortas" role="listitem" tabindex="0">
+                        <div class="category-image">
+                            <img src="assets/torta de morango.jpeg" alt="Tortas geladas" loading="lazy">
+                            <div class="category-overlay">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <span>Ver Produtos</span>
+                            </div>
+                        </div>
+                        <h3>Tortas</h3>
+                        <p>Geladas e tradicionais</p>
+                    </article>
+                    <article class="category-card" data-category="especiais" role="listitem" tabindex="0">
+                        <div class="category-image">
+                            <img src="assets/quanto bolo servir.png" alt="Produtos especiais" loading="lazy">
+                            <div class="category-overlay">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <span>Ver Produtos</span>
+                            </div>
+                        </div>
+                        <h3>Especiais</h3>
+                        <p>Produtos únicos e sazonais</p>
+                    </article>
+                    <article class="category-card" data-category="bolo-colher" role="listitem" tabindex="0">
+                        <div class="category-image">
+                            <img src="assets/bolo de colher 2.jpeg" alt="Bolos de colher" loading="lazy">
+                            <div class="category-overlay">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <span>Ver Produtos</span>
+                            </div>
+                        </div>
+                        <h3>Bolo de Colher</h3>
+                        <p>Cremosos e irresistíveis</p>
+                    </article>
+                    <article class="category-card" data-category="naked-cake" role="listitem" tabindex="0">
+                        <div class="category-image">
+                            <img src="assets/nake de cake 2.jpeg" alt="Naked cakes" loading="lazy">
+                            <div class="category-overlay">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <span>Ver Produtos</span>
+                            </div>
+                        </div>
+                        <h3>Naked Cake</h3>
+                        <p>Estilo rústico e natural</p>
+                    </article>
+                    <article class="category-card" data-category="salgados-premium" role="listitem" tabindex="0">
+                        <div class="category-image">
+                            <img src="assets/panelinhas_barquetes_upscaled.png" alt="Salgados premium" loading="lazy">
+                            <div class="category-overlay">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <span>Ver Produtos</span>
+                            </div>
+                        </div>
+                        <h3>Salgados Premium</h3>
+                        <p>Panelinhas, barquetes e mini calzones</p>
+                    </article>
+                    <article class="category-card" data-category="brigadeiros" role="listitem" tabindex="0">
+                        <div class="category-image">
+                            <img src="assets/brigadeiros_premium_upscaled.png" alt="Brigadeiros" loading="lazy">
+                            <div class="category-overlay">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <span>Ver Produtos</span>
+                            </div>
+                        </div>
+                        <h3>Brigadeiros</h3>
+                        <p>Tradicionais, premium e especiais</p>
+                    </article>
+                    <article class="price-card" role="listitem">
+                        <div class="price-content">
+                            <img src="assets/criativo_precos.png" alt="Tabela de preços" class="price-image" id="price-image">
+                            <h3>Tabela de Preços</h3>
+                            <p>Clique para visualizar</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="floating-info-box">
+            <div class="info-content">
+                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                <p><strong>Bolos Decorados:</strong> Cada bolo é único! Por isso, faço orçamentos personalizados considerando tamanho, sabor e decoração. Entre em contato para criarmos juntos o bolo dos seus sonhos! 🎂</p>
+            </div>
+        </div>
+
+    <div id="modal-galeria" class="modal">
+        <div class="modal-content-galeria">
+            <span class="close-btn">&times;</span>
+            <h3 class="gallery-title"></h3>
+            
+            <div class="gallery-grid">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-price" class="modal">
+        <div class="modal-content-price">
+            <span class="close-btn">&times;</span>
+            <img src="assets/criativo_precos.png" alt="Tabela de preços ampliada" class="price-image-large">
+        </div>
+    </div>
+
+    <div id="modal-bolo-servir" class="modal">
+        <div class="modal-content-price">
+            <span class="close-btn">&times;</span>
+            <img src="assets/quanto bolo servir.png" alt="Guia de quanto bolo servir" class="price-image-large">
+        </div>
+    </div>
+
+    <div id="modal-doces" class="modal">
+        <div class="modal-content-price">
+            <span class="close-btn">&times;</span>
+            <img src="assets/beijinho.jpeg" alt="Cardápio de doces" class="price-image-large">
+        </div>
+    </div>
+
+    <div id="modal-salgados" class="modal">
+        <div class="modal-content-price">
+            <span class="close-btn">&times;</span>
+            <img src="assets/mini-sanduiches.jpeg" alt="Cardápio de salgados" class="price-image-large">
+        </div>
+    </div>
+
+    <div id="modal-bolos" class="modal">
+        <div class="modal-content-price">
+            <span class="close-btn">&times;</span>
+            <img src="assets/bolo-tradicional.jpeg" alt="Cardápio de bolos" class="price-image-large">
+        </div>
+    </div>
+
+    <div id="modal-tortas" class="modal">
+        <div class="modal-content-price">
+            <span class="close-btn">&times;</span>
+            <img src="assets/torta de morango.jpeg" alt="Cardápio de tortas" class="price-image-large">
+        </div>
+    </div>
+
+    <div id="modal-bolo-colher" class="modal">
+        <div class="modal-content-price">
+            <span class="close-btn">&times;</span>
+            <img src="assets/bolo de colher 2.jpeg" alt="Cardápio de bolo de colher" class="price-image-large">
+        </div>
+    </div>
+
+    <div id="modal-naked-cake" class="modal">
+        <div class="modal-content-price">
+            <span class="close-btn">&times;</span>
+            <img src="assets/nake de cake 2.jpeg" alt="Cardápio de naked cake" class="price-image-large">
+        </div>
+    </div>
+
+    <div id="modal-salgados-premium" class="modal">
+        <div class="modal-content-price">
+            <span class="close-btn">&times;</span>
+            <img src="assets/panelinhas_barquetes_upscaled.png" alt="Cardápio de salgados premium" class="price-image-large">
+        </div>
+    </div>
+
+    <div id="modal-image-zoom" class="modal">
+        <div class="modal-content-price">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="Imagem ampliada" class="price-image-large" id="zoom-image">
+        </div>
+    </div>
+
+        <section class="payment-section" id="pagamento" aria-labelledby="pagamento-title">
+            <div class="container">
+                <h2 id="pagamento-title" class="section-title">Formas de Pagamento</h2>
+                <div class="payment-methods">
+                    <div class="payment-card">
+                        <i class="fas fa-qrcode" aria-hidden="true"></i>
+                        <h3>PIX</h3>
+                        <p>Pagamento instantâneo</p>
+                    </div>
+                    <div class="payment-card">
+                        <i class="fas fa-credit-card" aria-hidden="true"></i>
+                        <h3>Cartões</h3>
+                        <p>Crédito e débito</p>
+                    </div>
+                    <div class="payment-card">
+                        <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                        <h3>Dinheiro</h3>
+                        <p>À vista na entrega</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contato" aria-labelledby="contato-title">
+            <div class="container">
+                <h2 id="contato-title" class="section-title">Faça seu Pedido</h2>
+                <form class="contact-form" id="form-pedido" novalidate>
+                    <div class="form-group">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" name="nome" required aria-describedby="nome-error">
+                        <span class="error-message" id="nome-error" role="alert"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required aria-describedby="email-error">
+                        <span class="error-message" id="email-error" role="alert"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp *</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required aria-describedby="whatsapp-error">
+                        <span class="error-message" id="whatsapp-error" role="alert"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="produto">Produto desejado *</label>
+                        <input type="text" id="produto" name="produto" required aria-describedby="produto-error">
+                        <span class="error-message" id="produto-error" role="alert"></span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quantidade">Quantidade *</label>
+                            <input type="number" id="quantidade" name="quantidade" required min="1" aria-describedby="quantidade-error">
+                            <span class="error-message" id="quantidade-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="pessoas">Serve quantas pessoas?</label>
+                            <input type="text" id="pessoas" name="pessoas" placeholder="Ex: 10 pessoas">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Sabor, recheio, decoração, data de entrega..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        Enviar Pedido
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-carrinho" class="modal">
+        <div class="modal-content-carrinho">
+            <span class="close-btn">&times;</span>
+            <h3>Seu Carrinho</h3>
+            <div class="cart-items">
+            </div>
+            <div class="cart-actions">
+                <p>Total: R$ <span class="cart-total">0.00</span></p>
+                <button class="btn" id="checkout-btn">Finalizar Pedido</button>
+                <button class="btn" id="continue-shopping-btn">Comprar Mais</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Marju Confeitaria</h3>
+                    <p>Doces artesanais feitos com carinho desde 2025</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre" data-modal="modal-sobre">Sobre</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#pagamento">Pagamento</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p><i class="fab fa-whatsapp" aria-hidden="true"></i> (51) 98533-0121</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> contato@marjuconfeitaria.com</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/seuperfil" target="_blank" rel="noopener" aria-label="Instagram da Marju Confeitaria">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/seuperfil" target="_blank" rel="noopener" aria-label="Facebook da Marju Confeitaria">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marju Confeitaria. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

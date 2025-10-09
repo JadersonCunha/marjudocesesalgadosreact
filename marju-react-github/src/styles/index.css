@@ -509,7 +509,11 @@ body {
 
 .hero-text {
     max-width: 600px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     padding: var(--space-12);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl);
 }
 
 .hero-title {

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2140422d.css",
+    "main.js": "/static/js/main.65a0fa32.js",
+    "static/media/img_conf.jpg": "/static/media/img_conf.c92773703c54fc87eb11.jpg",
+    "static/media/img_bolo.JPG": "/static/media/img_bolo.44ff6870137f52c42ec6.JPG",
+    "static/media/img background.jpg": "/static/media/img background.97bb41c693bfccfd232e.jpg",
+    "index.html": "/index.html",
+    "main.2140422d.css.map": "/static/css/main.2140422d.css.map",
+    "main.65a0fa32.js.map": "/static/js/main.65a0fa32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2140422d.css",
+    "static/js/main.65a0fa32.js"
+  ]
+}

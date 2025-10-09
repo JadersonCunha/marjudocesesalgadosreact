@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import imgConf from '../assets/img_conf.jpg';
 
 const AboutModal = ({ isOpen, onClose }) => {
   useEffect(() => {
@@ -19,7 +20,7 @@ const AboutModal = ({ isOpen, onClose }) => {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <span className="close-btn" onClick={onClose}>&times;</span>
         <div className="about-container">
-          <img src={require('../assets/img_conf.jpg')} alt="Marju Confeiteira" className="about-image" />
+          <img src={imgConf} alt="Marju Confeiteira" className="about-image" />
           <div className="about-text">
             <h3>Sobre a Marju</h3>
             <p>Em 2010, comecei a fazer bolos para minha família, de forma totalmente amadora, apenas como um hobby. Na época, percebia a dificuldade em encontrar bolos verdadeiramente saborosos, úmidos e bem recheados à venda. O que era apenas uma diversão, aos poucos se transformou em uma paixão, e com ela veio a vontade de aprender mais e me aperfeiçoar.</p>

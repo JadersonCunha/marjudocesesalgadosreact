@@ -3,21 +3,21 @@ import { produtos, categoryNames } from '../data/products';
 
 const ProductsSection = ({ openModal }) => {
   const categories = [
-    { key: 'doces', image: 'assets/beijinho.jpeg', title: 'Doces', description: 'Brigadeiros, beijinhos e muito mais' },
-    { key: 'salgados', image: 'assets/mini-sanduiches.jpeg', title: 'Salgados', description: 'Coxinhas, risoles e empadinhas' },
-    { key: 'bolos', image: 'assets/bolo-tradicional.jpeg', title: 'Bolos', description: 'Personalizados para sua ocasião' },
-    { key: 'tortas', image: 'assets/torta de morango.jpeg', title: 'Tortas', description: 'Geladas e tradicionais' },
-    { key: 'especiais', image: 'assets/quanto bolo servir.png', title: 'Especiais', description: 'Produtos únicos e sazonais' },
-    { key: 'bolo-colher', image: 'assets/bolo de colher 2.jpeg', title: 'Bolo de Colher', description: 'Cremosos e irresistíveis' },
-    { key: 'naked-cake', image: 'assets/nake de cake 2.jpeg', title: 'Naked Cake', description: 'Estilo rústico e natural' },
-    { key: 'salgados-premium', image: 'assets/panelinhas_barquetes_upscaled.png', title: 'Salgados Premium', description: 'Panelinhas, barquetes e mini calzones' },
-    { key: 'brigadeiros', image: 'assets/brigadeiros_premium_upscaled.png', title: 'Brigadeiros', description: 'Tradicionais, premium e especiais' }
+    { key: 'doces', image: '/assets/beijinho.jpeg', title: 'Doces', description: 'Brigadeiros, beijinhos e muito mais' },
+    { key: 'salgados', image: '/assets/mini-sanduiches.jpeg', title: 'Salgados', description: 'Coxinhas, risoles e empadinhas' },
+    { key: 'bolos', image: '/assets/bolo-tradicional.jpeg', title: 'Bolos', description: 'Personalizados para sua ocasião' },
+    { key: 'tortas', image: '/assets/torta de morango.jpeg', title: 'Tortas', description: 'Geladas e tradicionais' },
+    { key: 'especiais', image: '/assets/quanto bolo servir.png', title: 'Especiais', description: 'Produtos únicos e sazonais' },
+    { key: 'bolo-colher', image: '/assets/bolo de colher 2.jpeg', title: 'Bolo de Colher', description: 'Cremosos e irresistíveis' },
+    { key: 'naked-cake', image: '/assets/nake de cake 2.jpeg', title: 'Naked Cake', description: 'Estilo rústico e natural' },
+    { key: 'salgados-premium', image: '/assets/panelinhas_barquetes_upscaled.png', title: 'Salgados Premium', description: 'Panelinhas, barquetes e mini calzones' },
+    { key: 'brigadeiros', image: '/assets/brigadeiros_premium_upscaled.png', title: 'Brigadeiros', description: 'Tradicionais, premium e especiais' }
   ];
 
   const handleCategoryClick = (categoryKey) => {
     if (categoryKey === 'especiais') {
       openModal('image', { 
-        src: 'assets/quanto bolo servir.png', 
+        src: '/assets/quanto bolo servir.png', 
         alt: 'Guia de quanto bolo servir' 
       });
     } else {
@@ -31,7 +31,7 @@ const ProductsSection = ({ openModal }) => {
 
   const handlePriceTableClick = () => {
     openModal('image', { 
-      src: 'assets/criativo_precos.png', 
+      src: '/assets/criativo_precos.png', 
       alt: 'Tabela de preços ampliada' 
     });
   };
@@ -73,7 +73,7 @@ const ProductsSection = ({ openModal }) => {
           <article className="price-card" onClick={handlePriceTableClick}>
             <div className="price-content">
               <img 
-                src="assets/criativo_precos.png" 
+                src="/assets/criativo_precos.png" 
                 alt="Tabela de preços" 
                 className="price-image" 
               />

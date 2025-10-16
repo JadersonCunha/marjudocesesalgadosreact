@@ -41,7 +41,7 @@ function App() {
       <Header cart={cart} openModal={openModal} />
       
       <div className="fixed-corner-shape">
-        <img src="assets/logo2.jpg" alt="Logo Marju Confeitaria" />
+        <img src="/assets/logo2.jpg" alt="Logo Marju Confeitaria" />
       </div>
 
       <main>
